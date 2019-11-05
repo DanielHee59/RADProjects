@@ -1,0 +1,50 @@
+body{
+    background-image: url("image.jpg");
+}
+
+h1{
+    color:white;
+    text-align:center;
+}
+
+p{
+    color:white;
+	
+}
+h2{
+  color:white;
+}
+
+p2{
+	color:red;
+	
+}
+span{
+	color:red;
+}
+
+/* Css for Navigation Bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+  background-color: #f1f1f1;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px 16px;
+  text-align:center;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+	
