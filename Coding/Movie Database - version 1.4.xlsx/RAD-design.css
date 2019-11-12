@@ -1,0 +1,68 @@
+h1,p,label,table,border {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+a {
+  color: white;
+  font-family: verdana;
+  font-size: 20px;
+}
+
+ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  text-decoration:none;
+}
+a:hover
+{
+	text-decoration:none; 
+  color: rgb(255, 255, 136)};
+  
+
+
+/* 9 November 2019 */
+/*To ensure all HTML element have the box-sizing property set to border-box.
+This will ensure that the padding and border are included in the total width and height of the elements.*/
+* {
+  box-sizing: border-box;
+}
+
+/* 5 November 2019 */
+/* Mobile Styles */
+@media only screen and (max-width: 400px) { /*@media is used as a rule to block CSS properties only if a certain condition is true*/
+  body {
+    background-color: #F09A9D; /* Red */ 
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) { /*@media is used as a rule to block CSS properties only if a certain condition is true*/
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
+  
+}
