@@ -1,5 +1,7 @@
 # RADProjects
-Team Members: Daniel Hee, Jayden Lee, Tze Yee Hon
+Team A
 
-#Sprint One
-Help our client deciding which types of web design are suitable for his sites
+Team Members:
+Daniel Hee (P466436)
+Tze Yee Hon (P466426)
+Jayden Lee (30003668)
