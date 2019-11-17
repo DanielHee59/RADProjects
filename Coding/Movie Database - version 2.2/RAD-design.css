@@ -1,0 +1,167 @@
+h1 
+{
+  color: white;
+}
+
+a 
+{
+  color: white;
+  font-family: verdana;
+  font-size: 20px;
+}
+
+ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+  /* gives us more flexibility (pun intended) when we will go to make our navbar responsive */
+  display: flex;
+}
+
+li
+{
+  float: left;
+}
+
+li a
+{
+  display: block;
+  padding: 8px;
+  text-decoration:none;
+}
+
+/*the property will change when move the mouse on the element */
+a:hover
+{
+	text-decoration:none; 
+	color: rgb(255, 255, 136);
+}
+
+/* 9 November 2019 */
+/*To ensure all HTML element have the box-sizing property set to border-box.
+This will ensure that the padding and border are included in the total width and height of the elements.*/
+* 
+{
+  box-sizing: border-box;
+}
+
+/* 5 November 2019 */
+/* 12 November 2019 makes top navigation bar responsive */
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) 
+{ /*@media is used as a rule to block CSS properties only if a certain condition is true*/
+  body
+  {
+    background-color: #F09A9D; /* Red */ 
+  }
+  /* makes navbar vertical, show elements in column */
+  ul
+  {
+    flex-direction: column;
+  }
+}
+/* Tablet Styles */
+@media screen and (min-width: 401px) and (max-width: 960px) 
+{/*@media is used as a rule to block CSS properties only if a certain condition is true*/
+  body 
+  {
+    background-color: #F5CF8E; /* Yellow */
+  }
+}
+/* Desktop Styles */
+/* 12 November 2019 */
+@media only screen and (min-width: 961px)
+{
+    body 
+    {
+      background-color: #B2D6FF; /* Blue */
+    }
+} 
+
+/* 12 November 2019 */
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)
+{
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+
+  border: 1px solid;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}  
