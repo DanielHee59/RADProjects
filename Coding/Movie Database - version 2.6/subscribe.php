@@ -9,10 +9,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
     //if name textfield is blank 
     if(empty($_POST["name"])){
-        $fnameErr = "Name is required";
+        $nameErr = "Name is required";
     }
     else{
-        $fname = test_input($_POST["name"]);
+        $name = test_input($_POST["name"]);
 
         //Check if name only contains letters and whitespace
         if(!preg_match("/^[a-zA-Z ]*$/",$name)){
